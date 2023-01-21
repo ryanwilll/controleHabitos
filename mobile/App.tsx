@@ -1,5 +1,5 @@
 import { StatusBar } from "expo-status-bar";
-import { StyleSheet, Text, View } from "react-native";
+
 import {
   useFonts,
   Inter_400Regular,
@@ -10,6 +10,7 @@ import {
 } from "@expo-google-fonts/inter";
 
 import { Loading } from "./src/components/Loading";
+import { Homes } from "./src/screens/Homes";
 
 export default function App() {
   const [fontsLoaded] = useFonts({
@@ -25,24 +26,10 @@ export default function App() {
   }
 
   return (
-    <View style={styles.container}>
-      <Text style={styles.text}>
-        Open up App.tsx to start working on your app!
-      </Text>
+    <>
+      <Homes />
       <StatusBar style="auto" />
-    </View>
+    </>
   );
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: "gray",
-    alignItems: "center",
-    justifyContent: "center",
-  },
-  text: {
-    color: "white",
-  fontFamily:"Inter_400Regular"
-  },
-});
