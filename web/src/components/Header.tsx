@@ -5,7 +5,7 @@ export function Header(){
     return(
       <div className="w-full max-w-3xl mx-auto flex items-center justify-between">
       <img src={logoImage} alt="Habits" />
-      <button type="button" className="border border-violet-500 font-semibold rounded-lg px-6 flex items-center py-4 gap-3 hover:border-violet-300 ">
+      <button type="button" className="border  border-violet-500 font-semibold rounded-lg px-6 flex items-center py-4 gap-3 hover:border-violet-300">
       <Plus size={20} className="text-violet-500 "/>
           Novo Habito</button>
       </div>
